@@ -10,9 +10,9 @@ namespace ConsoleAppProject
     /// This Project has been modified by:
     /// Derek Peacock 14/12/2020
     /// </summary>
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
