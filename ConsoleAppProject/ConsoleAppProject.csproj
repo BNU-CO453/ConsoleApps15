@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="App03\" />
     <Folder Include="App04\" />
     <Folder Include="App05\" />
   </ItemGroup>
