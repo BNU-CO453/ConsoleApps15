@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <Folder Include="Images\" />
-    <Folder Include="App01\" />
     <Folder Include="App02\" />
     <Folder Include="App03\" />
     <Folder Include="App04\" />
