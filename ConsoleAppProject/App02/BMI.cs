@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConsoleAppProject.App02
+﻿namespace ConsoleAppProject.App02
 {
     /// <summary>
     /// Please describe the main features of this App

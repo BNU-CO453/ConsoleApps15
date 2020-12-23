@@ -1,4 +1,6 @@
-﻿namespace ConsoleAppProject.App03
+﻿using System.ComponentModel;
+
+namespace ConsoleAppProject.App03
 {
     /// <summary>
     /// Grade A is First Class   : 70 - 100
@@ -9,6 +11,15 @@
     /// </summary>
     public enum Grades
     {
-        F, D, C, B, A
+        [Description("Fail")]
+        F, 
+        [Description("Third Class")]
+        D, 
+        [Description("Lower Second")]
+        C, 
+        [Description("Upper Second")]
+        B, 
+        [Description("First Class")]
+        A
     }
 }

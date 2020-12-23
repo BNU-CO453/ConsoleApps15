@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace ConsoleAppProject.App04
 {
     ///<summary>
@@ -15,6 +14,11 @@ namespace ConsoleAppProject.App04
     /// </author>
     public class MessagePost
     {
+        private int likes;
+
+        private readonly List<String> comments;
+
+
         // username of the post's author
         public String Username { get; }
 
@@ -22,11 +26,6 @@ namespace ConsoleAppProject.App04
         public String Message { get; }
 
         public DateTime Timestamp { get; }
-
-        private int likes;
-
-        private readonly List<String> comments;
-
 
         /// <summary>
         /// Constructor for objects of class MessagePost.
@@ -47,9 +46,9 @@ namespace ConsoleAppProject.App04
             comments = new List<String>();
         }
 
-        ///<summary>
+        /// <summary>
         /// Record one more 'Like' indication from a user.
-        ///</summary>
+        /// </summary>
         public void Like()
         {
             likes++;
