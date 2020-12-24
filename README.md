@@ -1,5 +1,7 @@
 # C# Console Applications App01 to App05
-**Name**: Student Name    
+**Name**: Student Name  
+**Student ID**: 12345678
+**Course:** Computing
 **Module**: CO453    
 **Started**: January 2021    
 
