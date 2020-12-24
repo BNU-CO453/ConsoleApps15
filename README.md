@@ -1,9 +1,11 @@
 # C# Console Applications App01 to App05
-**Name**: Student Name  
-**Student ID**: 12345678    
-**Course:** Computing    
-**Module**: CO453    
-**Started**: January 2021    
+| Author | Details |
+| ---- | ---- |
+**Name**: | Student Name  |
+**Student ID**: | 12345678 |
+**Course:** | Computing |
+**Module**: | CO453     |
+**Started**: | January 2021 |    
 
 1. App01: Distance Converter
 2. App02: BMI Calculator
