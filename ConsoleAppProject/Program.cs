@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleAppProject.Helpers;
+using System;
 
 namespace ConsoleAppProject
 {
@@ -18,7 +19,12 @@ namespace ConsoleAppProject
             
             Console.WriteLine("BNU CO453 Applications Programming 2020-2021!");
             Console.WriteLine();
-            Console.Beep();
+
+            Console.WriteLine(MyEnum.FirstValue.EnumValue());
+            Console.WriteLine(MyEnum.FirstValue);
+           
+            
+            // Console.WriteLine(MyEnum.SecondValue.GetDescription());
 
 
         }
