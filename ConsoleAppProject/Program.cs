@@ -1,4 +1,5 @@
-﻿using ConsoleAppProject.Helpers;
+﻿using ConsoleAppProject.App03;
+using ConsoleAppProject.Helpers;
 using System;
 
 namespace ConsoleAppProject
@@ -20,13 +21,15 @@ namespace ConsoleAppProject
             Console.WriteLine("BNU CO453 Applications Programming 2020-2021!");
             Console.WriteLine();
 
-            Console.WriteLine(MyEnum.FirstValue.EnumValue());
-            Console.WriteLine(MyEnum.FirstValue);
-           
-            
-            // Console.WriteLine(MyEnum.SecondValue.GetDescription());
+            // Using an extension method for each enumeration
+            Console.WriteLine("Using MyEnum Extension Method!\n");
+            Console.WriteLine("MyEnum Value = " + MyEnum.FirstValue);
+            Console.WriteLine("MyEnum Friendly Value = " + MyEnum.FirstValue.EnumValue());
+            Console.WriteLine();
 
-
+            // Using an extension method for any enumeration
+            StudentGrades grades = new StudentGrades();
+            grades.TestGradesEnumeration();
         }
     }
 }

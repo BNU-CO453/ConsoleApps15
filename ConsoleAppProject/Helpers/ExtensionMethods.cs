@@ -1,11 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Reflection;
 
 namespace ConsoleAppProject.Helpers
 {
     public static class ExtensionMethods
     {
+        /// <summary>
+        /// Discovered by Derek in Stack Overflow
+        /// Not so good as it needs a new method for every 
+        /// different enumeration
+        /// </summary>
         public static string EnumValue(this MyEnum e)
         {
             switch (e)
@@ -18,6 +23,23 @@ namespace ConsoleAppProject.Helpers
                     return "Third Friendly Value";
             }
             return "Horrible Failure!!";
+        }
+
+        /// <summary>
+        /// Discovered by Andrei Cruceru Where ??
+        /// Much better as it works for any enumeration but needs
+        /// using System.ComponentModel;
+        /// using System.ComponentModel.DataAnnotations;
+        /// When used.
+        /// </summary>
+
+        public static TAttribute GetAttribute<TAttribute>(this Enum enumValue)
+            where TAttribute : Attribute
+        {
+            return enumValue.GetType()
+                .GetMember(enumValue.ToString())
+                .First()
+                .GetCustomAttribute<TAttribute>();
         }
     }
 }

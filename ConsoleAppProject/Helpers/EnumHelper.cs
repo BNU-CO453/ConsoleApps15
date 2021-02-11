@@ -1,11 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
 namespace ConsoleAppProject.Helpers
 {
+    /// <summary>
+    /// Found on Stack Overflow and works with any
+    /// enunmeration
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public static class EnumHelper<T>
     {
         public static string GetDescription(Enum @enum)
