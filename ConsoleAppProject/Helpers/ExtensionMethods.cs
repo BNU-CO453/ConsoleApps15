@@ -6,6 +6,24 @@ namespace ConsoleAppProject.Helpers
 {
     public static class ExtensionMethods
     {
+
+        /// <summary>
+        /// Discovered by Andrei Cruceru Where ??
+        /// Much better as it works for any enumeration but needs
+        /// using System.ComponentModel;
+        /// using System.ComponentModel.DataAnnotations;
+        /// When used.
+        /// </summary>
+
+        public static TAttribute GetAttribute<TAttribute>(this Enum enumValue)
+            where TAttribute : Attribute
+        {
+            return enumValue.GetType()
+                .GetMember(enumValue.ToString())
+                .First()
+                .GetCustomAttribute<TAttribute>();
+        }
+
         /// <summary>
         /// Discovered by Derek in Stack Overflow
         /// Not so good as it needs a new method for every 
@@ -25,21 +43,5 @@ namespace ConsoleAppProject.Helpers
             return "Horrible Failure!!";
         }
 
-        /// <summary>
-        /// Discovered by Andrei Cruceru Where ??
-        /// Much better as it works for any enumeration but needs
-        /// using System.ComponentModel;
-        /// using System.ComponentModel.DataAnnotations;
-        /// When used.
-        /// </summary>
-
-        public static TAttribute GetAttribute<TAttribute>(this Enum enumValue)
-            where TAttribute : Attribute
-        {
-            return enumValue.GetType()
-                .GetMember(enumValue.ToString())
-                .First()
-                .GetCustomAttribute<TAttribute>();
-        }
     }
 }
