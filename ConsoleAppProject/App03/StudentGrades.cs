@@ -26,7 +26,7 @@ namespace ConsoleAppProject.App03
             Console.WriteLine($"Grade Description = {gradeDescription}");
 
             var testDescription = EnumHelper<Grades>.GetDescription(grade);
-            var testName = EnumHelper<Grades>.GetDisplayValue(grade);
+            var testName = EnumHelper<Grades>.GetName(grade);
 
             Console.WriteLine();
             Console.WriteLine("Discovered by Derek Using EnumHelper\n");

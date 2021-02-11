@@ -35,7 +35,7 @@ namespace ConsoleAppProject.Helpers
             return description;
         }
 
-        public static string GetDisplayValue(T value)
+        public static string GetName(T value)
         {
             var fieldInfo = value.GetType().GetField(value.ToString());
 
