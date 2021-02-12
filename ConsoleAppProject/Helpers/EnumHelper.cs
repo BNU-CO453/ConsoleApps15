@@ -6,8 +6,8 @@ using System.Reflection;
 namespace ConsoleAppProject.Helpers
 {
     /// <summary>
-    /// Found on Stack Overflow and works with any
-    /// enunmeration
+    /// Found on Stack Overflow and works with any enunmeration
+    /// See example of how to use it in the Enuerations wiki page
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public static class EnumHelper<T>
@@ -35,6 +35,9 @@ namespace ConsoleAppProject.Helpers
             return description;
         }
 
+        /// <summary>
+        /// Found on Stack Overflow and works with any enumeration
+        /// </summary>
         public static string GetName(T value)
         {
             var fieldInfo = value.GetType().GetField(value.ToString());

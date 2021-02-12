@@ -4,6 +4,10 @@ using System.Reflection;
 
 namespace ConsoleAppProject.Helpers
 {
+    /// <summary>
+    /// These methods extend existing classes or enuerations
+    /// By Derek & Andrei
+    /// </summary>
     public static class ExtensionMethods
     {
 
@@ -14,7 +18,6 @@ namespace ConsoleAppProject.Helpers
         /// using System.ComponentModel.DataAnnotations;
         /// When used.
         /// </summary>
-
         public static TAttribute GetAttribute<TAttribute>(this Enum enumValue)
             where TAttribute : Attribute
         {

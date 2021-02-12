@@ -4,6 +4,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ConsoleAppProject.Helpers
 {
+    /// <summary>
+    /// This is an example of how annotations can ber added
+    /// to an Enumeration.  Access to thee name and the description
+    /// is through EnumHelpers class or ExtensionMethods
+    /// by Derek & Andrei
+    /// </summary>
     public enum MyEnum
     {
         [Display(Name = "First Value")]
