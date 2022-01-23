@@ -18,18 +18,8 @@ namespace ConsoleAppProject
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             
-            Console.WriteLine("BNU CO453 Applications Programming 2020-2021!");
+            Console.WriteLine("BNU CO453 Applications Programming 2021-2022!");
             Console.WriteLine();
-
-            // Using an extension method for each enumeration
-            Console.WriteLine("Using MyEnum Extension Method!\n");
-            Console.WriteLine("MyEnum Value = " + MyEnum.FirstValue);
-            Console.WriteLine("MyEnum Friendly Value = " + MyEnum.FirstValue.EnumValue());
-            Console.WriteLine();
-
-            // Using an extension method for any enumeration
-            StudentGrades grades = new StudentGrades();
-            grades.TestGradesEnumeration();
         }
     }
 }
