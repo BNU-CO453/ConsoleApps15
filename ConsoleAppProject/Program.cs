@@ -17,8 +17,12 @@ namespace ConsoleAppProject
         public static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            
-            Console.WriteLine("BNU CO453 Applications Programming 2021-2022!");
+
+            Console.WriteLine();
+            Console.WriteLine(" =================================================");
+            Console.WriteLine("    BNU CO453 Applications Programming 2021-2022! ");
+            Console.WriteLine("        by Derek Peacock and Nicholas Day         ");
+            Console.WriteLine(" =================================================");
             Console.WriteLine();
         }
     }
